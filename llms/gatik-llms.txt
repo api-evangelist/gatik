@@ -1,0 +1,28 @@
+# Gatik
+
+> Gatik runs autonomous trucks for Fortune 50 retailers and grocers, moving freight between distribution centers and stores every day in North America.
+
+Gatik is an autonomous trucking company focused on the middle mile: repeatable, short-haul freight routes between hubs and retail endpoints. The company deploys Gatik Driver™, an AI-powered autonomy system built for commercial operations.
+
+## Primary pages
+
+- [Home](https://gatik.ai/): Company overview, live operations, news, and newsletter signup.
+
+## Company focus
+
+- Autonomous middle-mile logistics
+- Commercial deployments with Fortune 50 retailers
+- Safety-first, evidence-based autonomy at scale
+
+## Official profiles
+
+- [X](https://x.com/Gatik_AI)
+- [LinkedIn](https://www.linkedin.com/company/gatik_ai/)
+- [Instagram](https://www.instagram.com/gatik_ai)
+- [YouTube](https://www.youtube.com/@gatik_ai)
+- [Facebook](https://www.facebook.com/gatik.official)
+
+## Optional
+
+- [Sitemap](https://gatik.ai/sitemap.xml)
+- [Robots](https://gatik.ai/robots.txt)

@@ -1,0 +1,48 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts (0-working/probe-domain-security.py,
+  extended by hand for the archive/news hosts and for the HSTS header, which the
+  script's HEAD request could not read)
+hosts:
+- host: gatik.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  6 00:26:57 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+  server: Vercel
+- host: archive.gatik.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep  6 00:37:34 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+  server: cloudflare
+  note: legacy WordPress site; carries about/safety/news/careers/legal pages the
+    current gatik.ai navigation links out to
+- host: news.gatik.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  7 19:39:44 2026 GMT
+  hsts: true
+  hsts_max_age: 63072000
+  server: cloudflare
+  note: 301-redirects to https://archive.gatik.ai/
+domains:
+- domain: gatik.ai
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: v=spf1 include:_spf.google.com include:_spf.psm.knowbe4.com include:6767982.spf08.hubspotemail.net
+    ~all
+  dmarc: true
+  dmarc_policy: quarantine
+  dmarc_rua: mailto:abuse@gatik.ai
+observations:
+- HSTS is enforced on every reachable host with a two-year max-age.
+- No DNSSEC and no CAA records are published for gatik.ai.
+- DMARC is published at p=quarantine (not reject) with an aggregate-report address.
+- gatik.ai carries a Cloudflare wildcard DNS record, so arbitrary subdomains
+  (api., docs., developer., app., and a nonsense control name) all resolve to the
+  same Cloudflare IPs and fail the TLS handshake with HTTP 525. Those 525s are a
+  wildcard artifact, not a gated API host.

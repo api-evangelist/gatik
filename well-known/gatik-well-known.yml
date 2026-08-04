@@ -1,0 +1,59 @@
+generated: '2026-08-04'
+method: probed
+source: live HTTP probe of every reachable gatik.ai host, 2026-08-04
+note: >-
+  Probed for completeness only. Gatik publishes NO /.well-known/ discovery
+  documents on any reachable host — every path below returned 404. This file is
+  an honest negative record of the probe; because nothing was found, NO
+  `WellKnown`, `APICatalog` or `SecurityTxt` pointer is wired into apis.yml.
+  Do not add one on a later run unless a document actually returns 200.
+found: 0
+hosts_probed:
+- https://gatik.ai
+- https://archive.gatik.ai
+- https://news.gatik.ai
+hosts_not_resolvable:
+  note: >-
+    api./docs./developer./developers./app.gatik.ai are NOT real hosts. gatik.ai
+    carries a Cloudflare wildcard DNS record, so every subdomain resolves to the
+    same three Cloudflare IPs and every TLS handshake fails with HTTP 525 (an
+    arbitrary control subdomain, nonsense-xyz.gatik.ai, resolves identically).
+    A 525 on these names is not evidence of a gated API host.
+  hosts: [api.gatik.ai, docs.gatik.ai, developer.gatik.ai, developers.gatik.ai, app.gatik.ai]
+documents:
+- host: https://gatik.ai
+  results:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://archive.gatik.ai
+  results:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: https://news.gatik.ai
+  results:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+adjacent_probes:
+- {path: /llms.txt, host: 'https://gatik.ai', status: 200, saved: llms/gatik-llms.txt}
+- {path: /llms.txt, host: 'https://archive.gatik.ai', status: 404}
+- {path: /llms.txt, host: 'https://news.gatik.ai', status: 404}
+- {path: /robots.txt, host: 'https://gatik.ai', status: 200}
+- {path: /sitemap.xml, host: 'https://gatik.ai', status: 200}
