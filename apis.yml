@@ -12,6 +12,17 @@ description: 'Gatik is an autonomous trucking company founded in 2017 by Gautam 
   API, OpenAPI specification, SDK or developer portal — its surface is a corporate marketing
   site plus a legacy archive site carrying about, safety, news, careers and legal pages.'
 url: https://raw.githubusercontent.com/api-evangelist/gatik/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://gatik.ai/assets/images/gatik-autonomous-freight-truck-og.jpg
 x-type: company
 x-source: harvest:secondary-market
