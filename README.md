@@ -64,5 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Gatik is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/gatik_stock/
+Gatik is an autonomous trucking company founded in 2017 by Gautam Narang, Arjun Narang and Apeksha Kumavat, headquartered in Silicon Valley, California. Gatik builds and operates the Gatik Driver, an SAE Level 4 autonomy system purpose-built for the middle mile: short-haul, repeatable freight routes between distribution centers, dark stores and retail endpoints. Gatik runs driverless medium-duty box trucks in commercial service for Fortune 50 retailers and grocers including Walmart, Loblaw, Kroger, Tyson Foods, Pitney Bowes and PepsiCo, across Texas, Arkansas, Arizona, Ontario and other North American markets. The company partners with Isuzu, Ryder, Goodyear and NVIDIA, runs the Gatik Arena simulation platform, and publishes no public developer API, OpenAPI specification, SDK or developer portal — its surface is a corporate marketing site plus a legacy archive site carrying about, safety, news, careers and legal pages.
+
+**Areas:** Company · Autonomous Vehicles · Autonomous Trucking · Logistics · Freight · Middle Mile · Supply Chain · Transportation · Robotics · Artificial Intelligence
+
+## Gatik on APIs.io
+
+Everything profiled for Gatik is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/gatik/](https://apis.io/providers/gatik/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Gatik Domain Security](https://apis.io/security/gatik/gatik-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://gatik.ai/)
+- [Blog](https://archive.gatik.ai/news/blog/)
+- [Privacy policy](https://archive.gatik.ai/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 7.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 10.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/gatik/](https://apis.io/providers/gatik/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Gatik: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/gatik/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
